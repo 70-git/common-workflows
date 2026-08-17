@@ -1,0 +1,30 @@
+name: test-workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environment"
+        required: true
+        default: "dev"
+
+      project:
+        description: "Project name"
+        required: true
+        default: "roboshop"
+
+      component:
+        description: "Component name"
+        required: true
+        default: "frontend"
+
+jobs:
+  actions-demo:
+    runs-on: ubuntu-latest # GitHub-hosted runner
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: List the files
+        run: ls -l
