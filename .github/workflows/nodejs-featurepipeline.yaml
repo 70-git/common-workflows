@@ -1,7 +1,7 @@
 name: test-workflow
 
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       environment:
         description: "Environment"
