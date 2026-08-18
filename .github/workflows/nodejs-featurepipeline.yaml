@@ -7,24 +7,24 @@ on:
       environment:
         description: "Environment"
         required: true
+        type: string
         default: "dev"
-       
 
       project:
         description: "Project name"
         required: true
+        type: string
         default: "roboshop"
-        
 
       component:
         description: "Component name"
         required: true
+        type: string
         default: "frontend"
-        
 
 jobs:
   actions-demo:
-    runs-on: ubuntu-latest # GitHub-hosted runner
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
