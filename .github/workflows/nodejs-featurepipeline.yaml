@@ -8,19 +8,19 @@ on:
         description: "Environment"
         required: true
         default: "dev"
-        type: string
+       
 
       project:
         description: "Project name"
         required: true
         default: "roboshop"
-        type: string
+        
 
       component:
         description: "Component name"
         required: true
         default: "frontend"
-        type: string
+        
 
 jobs:
   actions-demo:
